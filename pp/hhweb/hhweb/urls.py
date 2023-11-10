@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from vision.views import SkillsViewSet
+from vision.views import SkillsViewSet, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', SkillsViewSet.as_view({'get': 'list'})),
+    path("qq/", index)
 ]

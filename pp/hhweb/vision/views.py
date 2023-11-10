@@ -18,3 +18,7 @@ class SkillsViewSet(viewsets.ModelViewSet):
     #     permissions.AllowAny
     # ]
     serializer_class = SkillsSerializer
+
+
+def index(request):
+    return render(request, "vision/index.html")
